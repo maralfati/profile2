@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+header{
+    background-color: rgba(240, 248, 255, 0.918);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+header .logo{
+    text-decoration: none;
+    color: rgb(25, 25, 63);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+header .navigation a{
+    text-decoration: none;
+    color: rgb(25, 25, 63);
+    padding-left: 30px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+header .navigation a:hover{
+    color: blueviolet;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./pic/programmer.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+    color: rgb(25, 25, 63);
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main h3{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.main .main_button{
+    color: white;
+    background-color: rgba(75, 111, 143, 0.918);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    transition: 0.7s ease;
+}
+.main .main_button:hover{
+    background-color:rgba(49, 143, 226, 0.918); 
+    transform: scale(1.1);
+}
+.main .socal_icons img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 30px;
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color:rgb(25, 25, 63) ;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color:white;
+    width: 15.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    text-align: center;
+
+
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card .icoon img{
+    width: 8em;
+}
+.card .info h3{
+    color: rgb(25, 25, 63);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.projects{
+    background-color: rgba(240, 248, 255, 0.918);
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project_card{
+    background-color: white;
+    border: 1px solid gray;
+    min-height: 14em;
+    width: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project_card:hover{
+    transform: scale(1.1);
+}
+.project_img img{
+    width: 100%;
+}
+.project_img img:hover{
+    opacity: 0.7;
+}
+.project_info{
+    padding: 1em;
+}
+.service_category{
+    font-size: 0.8em;
+    color: #000;
+}
+.project_title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 0.7em;
+}
+.more_details{
+    text-decoration: none;
+    color:rgb(25, 25, 63) ;
+}
+.more_details:hover{
+    color: blueviolet;
+}
+.div_contact{
+    display: flex;
+    justify-content: center;
+}
+.div_contact .icoon img{
+    width: 4.5em;
+}
+#contact .info h3{
+    color: #000;
+}
+#contact .info p{
+    font-size: 0.8em;
+}
+.footer{
+    background-color:rgba(129, 187, 238, 0.315) ;
+    color: #000;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .socal_icons img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.footer_title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer_title span{
+    color: blue;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 10px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.7em;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h2{
+        font-size: 1em;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .div_contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer_title{
+      font-size: 0.6em;
+    }
+    .footer .socal_icons img{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+    }
+
+    .card{
+        width: 40%;
+    }
+    .project_card{
+        width: 40%;
+    }
+    
+
+}
+
+@media (max-width:542px){
+    body{
+        font-size: 12px;
+    }
+    .main h2{
+        font-size: 0.8em;
+    }
+    .main h3{
+        font-size: 1.4em;
+    }
+    .card{
+        width: 90%;
+    }
+    .project_card{
+        width: 90%;
+    }
+}
+@media (max-width:390px){
+    .card{
+        width: 95%;
+    }
+}
+@media (max-width:375px){
+    body{
+        font-size: 8px;
+    }
+    .main h2{
+        font-size: 0.6em;
+    }
+    .main h3{
+        font-size: 1em;
+    }
+    
+    .card , .project_card{
+        width: 90%;
+    }
+    .footer .socal_icons img{
+     width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+    }
+    header{
+        
+        padding: 10px 25px;
+    }
+    header .navigation{
+        display: flex;
+        flex-direction: column;
+    }
+    header .navigation a{
+        padding: 3px 0;
+    }
+    .footer .socal_icons img{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 5px;
+        
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .main .socal_icons img{
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        margin-right: 5px;
+        
+    }    
+    
+        
+}
+@media (max-width:255px){
+    .card{
+        width: 95%;
+    }
+}
